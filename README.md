@@ -2,36 +2,43 @@
 
 Projeto desenvolvido durante o curso de NodeJS do DevSamurai.
 
-### Creating project...
+### Creating project
+<br>
 
-*mkdir dominando-nodejs*
-*cd dominando-nodejs*
-*yarn init -y*
-*yarn add express*
-*yarn add nodemon -D*
-
+```bash
+mkdir dominando-nodejs
+cd dominando-nodejs
+yarn init -y
+yarn add express
+yarn add nodemon -D
+```
 ### Adjusting imports/exports
+<br>
 
-*yarn add sucrase -D*
-
+```bash
+yarn add sucrase -D
+```
 ### Editor configurations
+<br>
 
-*yarn add eslint -D*
-*yarn eslint --init*
-*yarn add prettier eslint-config-prettier eslint-plugin-prettier -D*
-*yarn eslint --fix src --ext .js*
-
+```bash
+yarn add eslint -D
+yarn eslint --init
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+yarn eslint --fix src --ext .js
+```
 ### Database configuration (Sequelize and PosgreSQL)
+<br>
 
-*yarn add sequelize*
-*yarn add sequelize-cli -D*
-*yarn add pg pg-hstore*
-
+```bash
+yarn add sequelize
+yarn add sequelize-cli -D
+yarn add pg pg-hstore
+```
 ### Creating migrations
+<br>
 
-*yarn sequelize migration:create --name=create-customers*
-*yarn sequelize migration:create --name=create-contacts*
-
-*yarn sequelize db:migrate*
-*yarn sequelize db:migrate:undo*
-*yarn sequelize db:migrate:undo:all*
+```bash
+yarn sequelize migration:create --name=migration-name
+yarn sequelize db:migrate
+```
