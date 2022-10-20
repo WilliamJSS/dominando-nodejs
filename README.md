@@ -14,6 +14,13 @@ Projeto desenvolvido durante o curso de NodeJS do DevSamurai.
 
 *yarn add sucrase -D*
 
+### Editor configurations
+
+*yarn add eslint -D*
+*yarn eslint --init*
+*yarn add prettier eslint-config-prettier eslint-plugin-prettier -D*
+*yarn eslint --fix src --ext .js*
+
 ### Database configuration (Sequelize and PosgreSQL)
 
 *yarn add sequelize*
@@ -23,7 +30,8 @@ Projeto desenvolvido durante o curso de NodeJS do DevSamurai.
 ### Creating migrations
 
 *yarn sequelize migration:create --name=create-customers*
-*yarn sequelize db:migrate*
-
 *yarn sequelize migration:create --name=create-contacts*
+
 *yarn sequelize db:migrate*
+*yarn sequelize db:migrate:undo*
+*yarn sequelize db:migrate:undo:all*

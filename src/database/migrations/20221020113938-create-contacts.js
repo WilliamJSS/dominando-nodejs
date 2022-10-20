@@ -1,6 +1,6 @@
 module.exports = {
-  up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable("contacts", {
+  up: (queryInterface, Sequelize) =>
+    queryInterface.createTable("contacts", {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -31,10 +31,7 @@ module.exports = {
         onDelete: "CASCADE",
         allowNull: false,
       },
-    });
-  },
+    }),
 
-  down: queryInterface => {
-    return queryInterface.dropTable("contacts");
-  },
+  down: (queryInterface) => queryInterface.dropTable("contacts"),
 };

@@ -1,22 +1,22 @@
-import Sequelize from "sequelize"
+import Sequelize from "sequelize";
 
-import config from "../config/database"
+import config from "../config/database";
 
-import Customer from "../app/models/Customer"
-import Contact from "../app/models/Contact"
-import User from "../app/models/User"
+import Customer from "../app/models/Customer";
+import Contact from "../app/models/Contact";
+import User from "../app/models/User";
 
-const models = [Customer, Contact, User]
+const models = [Customer, Contact, User];
 
 class Database {
-    constructor() {
-        this.connection = new Sequelize(config.development)
-        this.init()
-    }
+  constructor() {
+    this.connection = new Sequelize(config.development);
+    this.init();
+  }
 
-    init() {
-        models.forEach(model => model.init(this.connection))
-    }
+  init() {
+    models.forEach((model) => model.init(this.connection));
+  }
 }
 
-export default new Database()
+export default new Database();
