@@ -12,3 +12,15 @@ Projeto desenvolvido durante o curso de NodeJS do DevSamurai.
 
 ### Adjusting imports/exports
 
+*yarn add sucrase -D*
+
+### Database configuration (Sequelize and PosgreSQL)
+
+*yarn add sequelize*
+*yarn add sequelize-cli -D*
+*yarn add pg pg-hstore*
+
+### Creating migrations
+
+*yarn sequelize migration:create --name=create-customers*
+*yarn sequelize db:migrate*
