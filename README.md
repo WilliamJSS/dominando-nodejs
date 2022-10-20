@@ -9,3 +9,6 @@ Projeto desenvolvido durante o curso de NodeJS do DevSamurai.
 *yarn init -y*
 *yarn add express*
 *yarn add nodemon -D*
+
+### Adjusting imports/exports
+
