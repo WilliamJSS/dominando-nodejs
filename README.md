@@ -24,3 +24,6 @@ Projeto desenvolvido durante o curso de NodeJS do DevSamurai.
 
 *yarn sequelize migration:create --name=create-customers*
 *yarn sequelize db:migrate*
+
+*yarn sequelize migration:create --name=create-contacts*
+*yarn sequelize db:migrate*
