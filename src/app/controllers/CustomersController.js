@@ -1,3 +1,5 @@
+import Customer from "../models/Customer"
+
 let customers = [
     { id: 1, name: "Dev Samurai", site: "http://devsamurai.com.br" },
     { id: 2, name: "Google", site: "http://google.com" },
@@ -8,8 +10,11 @@ class CustomersController {
 
     // Lista todos os Customers
     index(req, res) {
-        return res.json(customers)
+        const data = Customer.findAll({
+            limit: 1000,
+        })
 
+        return res.json(data)
     }
 
     // Recupera um Customer
