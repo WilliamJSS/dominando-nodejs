@@ -34,8 +34,17 @@ class CustomersController {
     if (name) {
       where = {
         ...where,
-        email: {
+        name: {
           [Op.iLike]: name,
+        },
+      };
+    }
+
+    if (email) {
+      where = {
+        ...where,
+        email: {
+          [Op.iLike]: email,
         },
       };
     }
