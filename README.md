@@ -48,3 +48,9 @@ yarn sequelize db:migrate
 ```bash
 yarn add date-fns
 ```
+
+### Validating request body
+
+```bash
+yarn add yup
+```
