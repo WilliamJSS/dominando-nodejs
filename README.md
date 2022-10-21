@@ -1,6 +1,6 @@
 # Dominando o NodeJS
 
-Projeto desenvolvido durante o curso de NodeJS do DevSamurai.
+Project developmented belong at the NodeJS course from DevSamurai.
 
 ### Creating project
 
