@@ -42,3 +42,9 @@ yarn add pg pg-hstore
 yarn sequelize migration:create --name=migration-name
 yarn sequelize db:migrate
 ```
+
+### Formatting dates
+
+```bash
+yarn add date-fns
+```

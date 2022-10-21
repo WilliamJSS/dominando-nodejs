@@ -11,6 +11,10 @@ class Contact extends Model {
       {
         sequelize,
         underscored: true,
+        name: {
+          singular: "contact",
+          plural: "contacts",
+        },
       }
     );
   }

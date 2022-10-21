@@ -11,6 +11,10 @@ class User extends Model {
       {
         sequelize,
         underscored: true,
+        name: {
+          singular: "user",
+          plural: "users",
+        },
       }
     );
   }
