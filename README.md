@@ -59,3 +59,12 @@ yarn add yup
 ```bash
 yarn add bcryptjs
 ```
+
+### Generating JWT tokens
+
+```bash
+yarn add jsonwebtoken
+yarn add dotenv-safe
+```
+
+**[MD5 Hash Generator](https://www.md5hashgenerator.com)**

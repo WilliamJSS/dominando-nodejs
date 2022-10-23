@@ -5,6 +5,8 @@ import authMiddleware from "./app/middlewares/auth";
 
 import "./database";
 
+require("dotenv-safe").config();
+
 class App {
   constructor() {
     this.server = express();
