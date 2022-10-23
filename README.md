@@ -53,3 +53,9 @@ yarn add date-fns
 ```bash
 yarn add yup
 ```
+
+### Encrypting passwords
+
+```bash
+yarn add bcryptjs
+```
