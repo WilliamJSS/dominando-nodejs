@@ -1,3 +1,6 @@
 import app from "./app";
+import "dotenv-safe/config";
 
-app.listen(3000);
+app.listen(process.env.PORT);
+
+console.log(`Server listen port: ${process.env.PORT}`);

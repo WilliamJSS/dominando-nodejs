@@ -1,5 +1,7 @@
 import { Router } from "express";
 
+import auth from "./app/middlewares/auth";
+
 import sessions from "./app/controllers/SessionsController";
 import customers from "./app/controllers/CustomersController";
 import contacts from "./app/controllers/ContactsController";
@@ -9,6 +11,9 @@ const routes = new Router();
 
 // Sessions
 routes.post("/sessions", sessions.create);
+
+// Controla o acesso a partir desse ponto
+routes.use(auth);
 
 // Customers
 routes.get("/customers", customers.index);

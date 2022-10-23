@@ -1,11 +1,8 @@
 import express from "express";
 import routes from "./routes";
 
-import authMiddleware from "./app/middlewares/auth";
-
 import "./database";
-
-require("dotenv-safe").config();
+import "dotenv-safe/config";
 
 class App {
   constructor() {
@@ -16,7 +13,6 @@ class App {
 
   middlewares() {
     this.server.use(express.json());
-    this.server.use(authMiddleware);
   }
 
   routes() {
