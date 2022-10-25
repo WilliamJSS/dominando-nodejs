@@ -15,6 +15,7 @@ class Contact extends Model {
           singular: "contact",
           plural: "contacts",
         },
+        schema: "dominando_nodejs",
       }
     );
   }

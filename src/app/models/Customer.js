@@ -15,6 +15,7 @@ class Customer extends Model {
           singular: "customer",
           plural: "customers",
         },
+        schema: "dominando_nodejs",
       }
     );
   }

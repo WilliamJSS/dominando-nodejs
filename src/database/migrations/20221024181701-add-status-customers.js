@@ -8,7 +8,10 @@ module.exports = {
 
   down: (queryInterface) => {
     queryInterface.sequelize.transaction(async (transaction) => {
-      await queryInterface.removeColumn("customers", "status", { transaction });
+      await queryInterface.removeColumn("customers", "status", {
+        transaction,
+        schema: "dominando_nodejs",
+      });
       await queryInterface.sequelize.query("DROP TYPE enum_customers_status", {
         transaction,
       });

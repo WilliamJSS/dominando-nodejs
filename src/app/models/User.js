@@ -18,6 +18,7 @@ class User extends Model {
           singular: "user",
           plural: "users",
         },
+        schema: "dominando_nodejs",
       }
     );
 
